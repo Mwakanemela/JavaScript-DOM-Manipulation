@@ -2,3 +2,29 @@ html {
   height: 100%;
   width: 100%;
 }
+
+.boxContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.black {
+  background-color: black;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.red {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.green {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  cursor: pointer;
+}
