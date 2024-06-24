@@ -4,6 +4,7 @@ html {
 }
 
 .boxContainer {
+  color: white;
   display: flex;
   justify-content: center;
 }
@@ -13,6 +14,7 @@ html {
   height: 100px;
   width: 100px;
   cursor: pointer;
+   color: white;
 }
 
 .red {
@@ -20,6 +22,7 @@ html {
   height: 100px;
   width: 100px;
   cursor: pointer;
+  color: white;
 }
 
 .green {
@@ -27,4 +30,15 @@ html {
   width: 100px;
   background-color: green;
   cursor: pointer;
+  color: white;
+}
+
+.clearButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+.clear {
+  cursor: pointer;
+  padding:5px 20px;
 }

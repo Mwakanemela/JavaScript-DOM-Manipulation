@@ -4,15 +4,29 @@ const titleDiv = document.getElementById('titleDiv');
 const blackBox = document.getElementById('black')
 const redBox = document.getElementById('red')
 const greenBox = document.getElementById('green')
+const clearButton = document.getElementById('clear')
 
 const colorDiv = document.querySelectorAll('.colorDiv')
+
+const timesClicked = {"red": 0, "green": 0, "black": 0}
 colorDiv.forEach(color => {
   // console.log(color.value)
   color.onclick = () => {
-    // title.innerText = color.value
-    console.log(color.value)
+    timesClicked[color.value] += 1
+      color.innerText = timesClicked[color.value]
+    // console.log(color.value)
   }
 })
+
+clearButton.onclick = () => {
+  clearAll()
+}
+function clearAll() {
+  colorDiv.forEach(color => {
+    color.innerText = ''
+    timesClicked[color.value] = 0
+  })
+}
 // for(const value in colorDiv) {
 //   console.log(colorDiv[value].value)
 // }
