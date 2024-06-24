@@ -5,6 +5,12 @@ const blackBox = document.getElementById('black')
 const redBox = document.getElementById('red')
 const greenBox = document.getElementById('green')
 
+const colorDiv = document.querySelectorAll('.colorDiv')
+for(const value in colorDiv) {
+  console.log(colorDiv[value].value)
+}
+// console.log(colorDiv[0].value)
+
 let message = "My name is: Kayange Mwakanemela"
 
 // console.log(title)
