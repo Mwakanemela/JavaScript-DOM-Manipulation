@@ -7,7 +7,11 @@ const greenBox = document.getElementById('green')
 
 const colorDiv = document.querySelectorAll('.colorDiv')
 colorDiv.forEach(color => {
-  console.log(color.value)
+  // console.log(color.value)
+  color.onclick = () => {
+    // title.innerText = color.value
+    console.log(color.value)
+  }
 })
 // for(const value in colorDiv) {
 //   console.log(colorDiv[value].value)
@@ -28,14 +32,14 @@ titleDiv.style.color = 'blue'
 titleDiv.style.backgroundColor = 'gray'
 // console.log(titleDiv.style.color)
 
-blackBox.onclick = () => {
-  console.log(`Black box clicked`)
-}
+// blackBox.onclick = () => {
+//   console.log(`Black box clicked`)
+// }
 
-redBox.onclick = () => {
-  console.log(`Red box clicked`)
-}
+// redBox.onclick = () => {
+//   console.log(`Red box clicked`)
+// }
 
-greenBox.onclick = () => {
-  console.log(`Green box clicked`)
-}
+// greenBox.onclick = () => {
+//   console.log(`Green box clicked`)
+// }
