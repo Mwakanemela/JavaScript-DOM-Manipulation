@@ -5,6 +5,8 @@
 const ul = document.querySelector('ul');
 ul.addEventListener("click", function(e) {
   console.log(e.target.innerText);
+  const target = e.target
+  target.style.backgroundColor = "lightgrey"
 })
 //Event Listeners and Event Propagation
 /*
