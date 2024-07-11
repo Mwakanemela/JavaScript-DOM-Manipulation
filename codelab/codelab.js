@@ -7,14 +7,20 @@ syntax element.addEventListener(event, handler) or (event, function)
 const btn2 = document.querySelector('.btn2');
 const btn3 = document.querySelector('.btn3');
 const btn4 = document.querySelector('.btn4');
+const cppBox = document.querySelector('.cpp');
+
+const setBackgroundColor = () => {
+  cppBox.style.backgroundColor = "green";
+}
+cppBox.addEventListener("mouseover", setBackgroundColor)
 
 function alertButton() {
   alert("I love Java")
 }
-// btn2.addEventListener("click", alertButton)
-btn2.onclick = () => {
-  alertButton()
-}
+btn2.addEventListener("click", alertButton)
+// btn2.onclick = () => {
+//   alertButton()
+// }
 // Traversing the DOM
 /*
 
