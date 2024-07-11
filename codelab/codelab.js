@@ -8,7 +8,19 @@ const btn2 = document.querySelector('.btn2');
 const btn3 = document.querySelector('.btn3');
 const btn4 = document.querySelector('.btn4');
 const cppBox = document.querySelector('.cpp');
+const toggleContent = document.querySelector('.toggle-content')
 
+function toggle() {
+  if(cppBox.classList.contains('hide-content')) {
+    cppBox.classList.remove('hide-content');
+  }else {
+    cppBox.classList.add('hide-content');
+  }
+}
+
+toggleContent.onclick = () => {
+  toggle();
+}
 const setBackgroundColor = () => {
   cppBox.style.backgroundColor = "green";
 }

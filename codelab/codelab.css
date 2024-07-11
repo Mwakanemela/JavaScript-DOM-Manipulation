@@ -38,3 +38,7 @@ body {
 .active {
   color: red;
 }
+
+.hide-content {
+  opacity: 0;
+}
