@@ -32,6 +32,7 @@ eventPropagation.onclick = (e) => {
   console.log(e.target)
 }
 linkBtn.onclick = (e) => {
+  //Event Propagation
   e.preventDefault()
   console.log("Hello World")
 }
