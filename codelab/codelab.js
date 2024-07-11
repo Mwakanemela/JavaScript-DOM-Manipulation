@@ -19,6 +19,9 @@ li.classList = "active list-items"
 console.log(li.classList.contains('active'))
 li.classList.remove('active')
 console.log(li.classList.contains('active'))
+
+// Remove an Element
+li.remove()
 // li.setAttribute('id', "main-heading")
 // const title = document.querySelector('#main-heading');
 // console.log(title.getAttribute('id'))
