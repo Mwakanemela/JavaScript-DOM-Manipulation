@@ -1,5 +1,10 @@
 
+//Event Listeners 
+/*
+*/
+
 // Traversing the DOM
+/*
 
 const ul = document.querySelector("ul")
 const html = document.documentElement
@@ -12,10 +17,10 @@ console.log(html.parentNode)
 // console.log(ul.children)
 // console.log(ul.parentElement.parentElement)
 
+*/
 
-
-/*
 //creating elements
+/*
 const ul = document.querySelector('ul');
 const li = document.createElement('li');
 
