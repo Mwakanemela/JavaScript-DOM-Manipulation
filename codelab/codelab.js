@@ -9,6 +9,9 @@ const btn3 = document.querySelector('.btn3');
 const btn4 = document.querySelector('.btn4');
 const cppBox = document.querySelector('.cpp');
 const toggleContent = document.querySelector('.toggle-content')
+const eventPropagation = document.querySelector('.eventPropagation');
+const linkBtn = document.querySelector('.link')
+
 
 function toggle() {
   if(cppBox.classList.contains('hide-content')) {
@@ -17,18 +20,23 @@ function toggle() {
     cppBox.classList.add('hide-content');
   }
 }
-
-toggleContent.onclick = () => {
-  toggle();
-}
 const setBackgroundColor = () => {
   cppBox.style.backgroundColor = "green";
 }
-cppBox.addEventListener("mouseover", setBackgroundColor)
-
 function alertButton() {
   alert("I love Java")
 }
+
+eventPropagation.onclick = (e) => {
+  e.target.innerText = "Event Propagation Clicked"
+  console.log(e.target)
+}
+linkBtn.onclick = (e) => {
+  e.preventDefault()
+  console.log("Hello World")
+}
+toggleContent.onclick = () => toggle()
+cppBox.addEventListener("mouseover", setBackgroundColor)
 btn2.addEventListener("click", alertButton)
 // btn2.onclick = () => {
 //   alertButton()
