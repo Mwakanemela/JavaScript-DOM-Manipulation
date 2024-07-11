@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -21,14 +21,20 @@ body {
     font-size: 2rem;
     margin-bottom: 10px;
   }
-  ul li {
-    background-color: white;
-    color: black;
-    margin: 3px;
-    font-size: 1.2rem;
-    padding: 5px;
-    text-align: center;
-    cursor: pointer;
-  }
+
 }
 
+
+.list-items {
+  background-color: white;
+  color: black;
+  margin: 3px;
+  font-size: 1.2rem;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.active {
+  color: red;
+}

@@ -12,6 +12,17 @@ const firstListItem = document.querySelector('.list-items');
 console.log(firstListItem.innerHTML)
 console.log(firstListItem.innerText)
 console.log(firstListItem.textContent)
+
+//set and remove attributes
+li.classList = "active list-items"
+
+console.log(li.classList.contains('active'))
+li.classList.remove('active')
+console.log(li.classList.contains('active'))
+// li.setAttribute('id', "main-heading")
+// const title = document.querySelector('#main-heading');
+// console.log(title.getAttribute('id'))
+// title.removeAttribute('id')
 //styling elements
 /*Styling an Element
 
