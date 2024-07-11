@@ -2,9 +2,16 @@
 const ul = document.querySelector('ul');
 const li = document.createElement('li');
 
+//adding element
 ul.append(li);
+//modify text
+li.innerText = "Kotlin"
 
+const firstListItem = document.querySelector('.list-items');
 
+console.log(firstListItem.innerHTML)
+console.log(firstListItem.innerText)
+console.log(firstListItem.textContent)
 //styling elements
 /*Styling an Element
 
