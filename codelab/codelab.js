@@ -1,8 +1,20 @@
 
 //Event Listeners 
 /*
+syntax element.addEventListener(event, handler) or (event, function)
 */
 
+const btn2 = document.querySelector('.btn2');
+const btn3 = document.querySelector('.btn3');
+const btn4 = document.querySelector('.btn4');
+
+function alertButton() {
+  alert("I love Java")
+}
+// btn2.addEventListener("click", alertButton)
+btn2.onclick = () => {
+  alertButton()
+}
 // Traversing the DOM
 /*
 
