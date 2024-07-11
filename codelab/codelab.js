@@ -1,8 +1,15 @@
-
-//Event Listeners 
+// Event Delegation
+/**
+ * 
+ */
+const ul = document.querySelector('ul');
+ul.addEventListener("click", function(e) {
+  console.log(e.target.innerText);
+})
+//Event Listeners and Event Propagation
 /*
 syntax element.addEventListener(event, handler) or (event, function)
-*/
+
 
 const btn2 = document.querySelector('.btn2');
 const btn3 = document.querySelector('.btn3');
@@ -42,6 +49,8 @@ btn2.addEventListener("click", alertButton)
 // btn2.onclick = () => {
 //   alertButton()
 // }
+
+*/
 // Traversing the DOM
 /*
 
