@@ -1,3 +1,20 @@
+
+// Traversing the DOM
+
+const ul = document.querySelector("ul")
+const html = document.documentElement
+console.log(html)
+console.log(html.parentElement)
+console.log(html.parentNode)
+// console.log(ul)
+// console.log(ul.parentNode.parentNode)
+// console.log(ul.parentElement.parentElement)
+// console.log(ul.children)
+// console.log(ul.parentElement.parentElement)
+
+
+
+/*
 //creating elements
 const ul = document.querySelector('ul');
 const li = document.createElement('li');
@@ -26,6 +43,8 @@ li.remove()
 // const title = document.querySelector('#main-heading');
 // console.log(title.getAttribute('id'))
 // title.removeAttribute('id')
+*/
+
 //styling elements
 /*Styling an Element
 
