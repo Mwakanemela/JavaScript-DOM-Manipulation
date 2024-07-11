@@ -1,6 +1,14 @@
+//creating elements
+const ul = document.querySelector('ul');
+const li = document.createElement('li');
+
+ul.append(li);
+
+
+//styling elements
 /*Styling an Element
 
-*/
+
 
 const title = document.querySelector('#main-heading')
 const listItems = document.querySelectorAll(".list-items")
@@ -10,16 +18,9 @@ title.style.color = "white";
 for(i in listItems) {
   listItems[i].style.color = "green";
 }
+*/
 
-
-
-
-
-
-
-
-
-
+//get elements
 /*Selecting Elements in the DOM
 const title = document.getElementById("main-heading")
 const listItems = document.getElementsByClassName('list-items')
